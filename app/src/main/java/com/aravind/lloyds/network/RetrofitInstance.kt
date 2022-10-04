@@ -4,9 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
- * Retrofit instance
- *
- * @constructor Create Retrofit instance
+ * create Retrofit instance
  */
 class RetrofitInstance {
 

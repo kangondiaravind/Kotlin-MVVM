@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 /**
  * Main activity view model
  *
- * @constructor Create Main activity view model
+ * Create Main activity view model
  */
 class MainActivityViewModel : ViewModel() {
 

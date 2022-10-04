@@ -7,7 +7,7 @@ import retrofit2.http.Query
 /**
  * Retro service
  *
- * @constructor Create empty Retro service
+ * Create Retro service
  */
 interface RetroService {
 
@@ -15,7 +15,7 @@ interface RetroService {
      * Fetch data from api
      * Url : https://api.github.com/search/repositories?q=india
      * @param query
-     * @return
+     * @return ApiResponse
      */
     @GET("repositories")
     suspend fun fetchDataFromApi(@Query("q") query: String): ApiResponse

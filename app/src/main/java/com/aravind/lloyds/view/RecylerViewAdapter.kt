@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso
 /**
  * Recyler view adapter
  *
- * @constructor Create empty Recyler view adapter
+ * Create Recyler view adapter
  */
 class RecylerViewAdapter : RecyclerView.Adapter<RecylerViewAdapter.MyViewHolder>() {
 

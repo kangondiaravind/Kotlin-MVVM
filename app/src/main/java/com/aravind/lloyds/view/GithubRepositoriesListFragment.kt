@@ -18,7 +18,7 @@ import com.aravind.lloyds.viewmodel.MainActivityViewModel
 /**
  * Github repositories list fragment
  *
- * @constructor Create empty Github repositories list fragment
+ * Create Github repositories list fragment
  */
 class GithubRepositoriesListFragment : Fragment() {
 
