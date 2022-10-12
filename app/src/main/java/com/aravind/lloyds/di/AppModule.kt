@@ -13,7 +13,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-    private val BASEURL: String = "https://api.github.com/search/"
+    private const val BASEURL: String = "https://api.github.com/search/"
 
     @Singleton
     @Provides
