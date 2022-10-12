@@ -1,6 +1,7 @@
 package com.aravind.lloyds.network
 
 import com.aravind.lloyds.model.ApiResponse
+import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -18,5 +19,5 @@ interface RetroService {
      * @return ApiResponse
      */
     @GET("repositories")
-    suspend fun fetchDataFromApi(@Query("q") query: String): ApiResponse
+    fun fetchDataFromApi(@Query("q") query: String): Call<ApiResponse>
 }

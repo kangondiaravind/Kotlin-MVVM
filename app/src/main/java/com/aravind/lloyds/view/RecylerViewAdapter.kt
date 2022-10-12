@@ -17,16 +17,15 @@ import com.squareup.picasso.Picasso
  */
 class RecylerViewAdapter : RecyclerView.Adapter<RecylerViewAdapter.MyViewHolder>() {
 
-    private var items = ArrayList<Item>()
+    private var listData: List<Item>? = null
 
     /**
      * Set updated data
      *
      * @param items
      */
-    fun setUpdatedData(items: ArrayList<Item>) {
-        this.items = items
-        notifyDataSetChanged()
+    fun setUpdatedData(listData: List<Item>?) {
+        this.listData = listData
     }
 
     /**
@@ -62,10 +61,11 @@ class RecylerViewAdapter : RecyclerView.Adapter<RecylerViewAdapter.MyViewHolder>
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.bind(items.get(position))
+        holder.bind(listData?.get(position)!!)
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        if (listData == null) return 0
+        return listData?.size!!
     }
 }

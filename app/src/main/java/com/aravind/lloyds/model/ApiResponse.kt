@@ -6,7 +6,7 @@ package com.aravind.lloyds.model
  * @property items
  */
 data class ApiResponse(
-    val items: ArrayList<Item>,
+    val items: List<Item>,
 )
 
 /**
@@ -28,5 +28,5 @@ data class Item(
  * @property avatar_url
  */
 data class Owner(
-     val avatar_url: String,
+    val avatar_url: String,
 )
